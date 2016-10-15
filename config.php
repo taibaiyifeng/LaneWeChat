@@ -16,15 +16,15 @@ define('LANEWECHAT_VERSION_DATE', '2014-11-05');
 /*
  * 服务器配置，详情请参考@link http://mp.weixin.qq.com/wiki/index.php?title=接入指南
  */
-define("WECHAT_URL", 'http://lanewechat.lanecn.com/');
-define('WECHAT_TOKEN', 'weixin');
+define("WECHAT_URL", 'http://tabstyle.cn/wechat/LaneWeChat/wechat.php');
+define('WECHAT_TOKEN', 'taibai');
 define('ENCODING_AES_KEY', "MqAuKoex6FyT5No0OcpRyCicThGs0P1vz4mJ2gwvvkF");
 
 /*
  * 开发者配置
  */
-define("WECHAT_APPID", 'wx9bc9decf65a52165');
-define("WECHAT_APPSECRET", 'c4f6055c5e07292307c2fc5891491b39');
+define("WECHAT_APPID", 'wx4b479e1d6c75736f');
+define("WECHAT_APPSECRET", '5d3368dce19a979ae9adf2fbdaa4b635');
 
 /*
  * SAE平台配置
