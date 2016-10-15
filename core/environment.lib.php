@@ -14,10 +14,11 @@ class Environment {
      * @param $accesskey, 运行时所属环境下的accesskey
      * @return bool
      */
-    public static function isSae($appname,$accesskey){
-        if(!strcmp(HTTP_APPNAME,$appname)&&!strcmp(HTTP_ACCESSKEY,$accesskey)){
-            return true;
-        }
+    //public static function isSae($appname,$accesskey){
+    public static function isSae(){
+        // if(!strcmp(HTTP_APPNAME,$appname)&&!strcmp(HTTP_ACCESSKEY,$accesskey)){
+        //     return true;
+        // }
         return false;
     }
 }
