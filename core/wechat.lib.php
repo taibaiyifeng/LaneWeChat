@@ -15,7 +15,7 @@ class Wechat{
      * 调试模式，将错误通过文本消息回复显示
      * @var boolean
      */
-    private $debug =true;
+    private $debug;
 
     /**
      * 以数组的形式保存微信服务器每次发来的请求
@@ -28,7 +28,7 @@ class Wechat{
      * @param string $token 验证信息
      * @param boolean $debug 调试模式，默认为关闭
      */
-    public function __construct($token, $debug = FALSE) {
+    public function __construct($token, $debug = TRUE) {
         //未通过消息真假性验证
        if ($this->isValid() && $this->validateSignature($token)) {
             return $_GET['echostr'];
