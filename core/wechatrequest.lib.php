@@ -154,7 +154,7 @@ class WechatRequest{
         'createtime:'.$request['createtime'].
         'msgtype:'.$request['msgtype'].
         'picurl:'.$request['picurl'].
-        'mediaid'.$request['media_id'].
+        'mediaid'.$request['mediaid'].
         'msgid:'.$request['msgid'];
         return ResponsePassive::text($request['fromusername'], $request['tousername'], $content);
     }
