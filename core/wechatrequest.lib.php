@@ -148,7 +148,14 @@ class WechatRequest{
      * @return array
      */
     public static function image(&$request){
-        $content = '收到图片';
+        $content = '收到图片'.
+        'tousername:'.$request['tousername'].
+        'fromusername:'.$request['fromusername'].
+        'createtime:'.$request['createtime'].
+        'msgtype:'.$request['msgtype'].
+        'picurl:'.$request['picurl'].
+        'mediaid'.$request['media_id'].
+        'msgid:'.$request['msgid'];
         return ResponsePassive::text($request['fromusername'], $request['tousername'], $content);
     }
 
