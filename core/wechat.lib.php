@@ -15,7 +15,7 @@ class Wechat{
      * 调试模式，将错误通过文本消息回复显示
      * @var boolean
      */
-    private $debug;
+    private $debug =true;
 
     /**
      * 以数组的形式保存微信服务器每次发来的请求
