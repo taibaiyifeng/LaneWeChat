@@ -133,12 +133,12 @@ class WechatRequest{
      */
     public static function text(&$request){
         $content = '收到文本消息'.
-        '\ntousername:'.$request['tousername'].
-        '\nfromusername:'.$request['fromusername'].
-        '\ncreatetime:'.$request['createtime'].
-        '\nmsgtype:'.$request['msgtype'].
-        '\ncontent:'.$request['content'].
-        '\nmsgid:'.$request['msgid'];
+        'tousername:'.$request['tousername'].
+        'fromusername:'.$request['fromusername'].
+        'createtime:'.$request['createtime'].
+        'msgtype:'.$request['msgtype'].
+        'content:'.$request['content'].
+        'msgid:'.$request['msgid'];
         return ResponsePassive::text($request['fromusername'], $request['tousername'], $content);
     }
 
