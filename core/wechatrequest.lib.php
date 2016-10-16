@@ -274,7 +274,7 @@ class WechatRequest{
      * @return array
      */
     public static function eventLocation(&$request){
-        $content = '收到上报的地理位置';
+        $content = '收到上报的地理位置event';
         return ResponsePassive::text($request['fromusername'], $request['tousername'], $content);
     }
 
