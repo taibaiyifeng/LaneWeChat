@@ -155,6 +155,8 @@ class WechatRequest{
         'msgtype:'.$request['msgtype'].
         'picurl:'.$request['picurl'].
         'mediaid'.$request['mediaid'].
+        'Event:'.$request['event'].
+        'eventkey:'.$request['eventkey'].
         'msgid:'.$request['msgid'];
         return ResponsePassive::text($request['fromusername'], $request['tousername'], $content);
     }
