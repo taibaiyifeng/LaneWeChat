@@ -29,8 +29,8 @@ define("WECHAT_APPSECRET", '5d3368dce19a979ae9adf2fbdaa4b635');
 /*
  * SAE平台配置
  */
-define("HTTP_ACCESSKEY", '04xmzo3zm5');
-define("HTTP_APPNAME", 'imcustom4test');
+define("HTTP_ACCESSKEY", '');
+define("HTTP_APPNAME", '');
 
 ////-----引入系统所需类库-------------------
 ////引入错误消息类
